@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            @font-face {
+            font-family: 'Galatea Light';
+            font-style: normal;
+            font-weight: normal;
+            src: local('Galatea Light'), url('fonts/Galatea Regular Light.woff') format('woff');
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main-div">
+            <div id="title">
+                <p>Dropbox</p>
+            </div>
+            <div id="drop-area" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                <p id="file-name-text"></p>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>
